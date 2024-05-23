@@ -116,3 +116,30 @@ body,
   margin-top: 10px;
   text-align: center;
 }
+
+#head {
+  height: 50px;
+  width: 50px;
+  background: url('src/assets/snake.png');
+  position: absolute;
+}
+
+#board {
+  height: 500px;
+  width: 500px;
+  display : none;
+  border: 5px white solid;
+  background-image: url('src/assets/grass.jpeg');
+  position: relative;
+  margin: 20 auto;
+}
+
+#apple {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+}
+
+#score {
+  display: none;
+}

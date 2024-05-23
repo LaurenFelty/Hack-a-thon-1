@@ -1,0 +1,21 @@
+#head {
+  height: 50px;
+  width: 50px;
+  background: url('assets/snake.png');
+  position: absolute;
+}
+
+#board {
+  height: 1000px;
+  width: 1000px;
+  border: 1px black solid;
+  background-image: url('assets/grass.jpeg');
+  position: relative;
+  margin: 20 auto;
+}
+
+#apple {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+}
