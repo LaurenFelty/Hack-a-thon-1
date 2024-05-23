@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (selectedMood === 'party') {
       console.log('Party Time');
       document.body.style.backgroundImage = "url('party-time.gif')";
-      document.body.style.backgroundSize = '1000px';
+      document.body.style.backgroundSize = '200px';
       const partyMusic = new Audio('partymusic.mp3');
       partyMusic.play();
     }
@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (selectedMood === 'relaxation') {
       console.log('Relaxxxxx');
       document.body.style.backgroundImage = "url('peaceful.gif')";
+      document.body.style.backgroundSize = '600px';
       const relaxMusic = new Audio('relax-music.mp3');
       relaxMusic.play();
     }
@@ -38,6 +39,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (selectedMood === 'sad') {
       console.log('Sad time');
       const sadMusic = new Audio('sad-music.m4a');
+      document.body.style.backgroundImage = "url('sad-cat.svg')";
+      document.body.style.backgroundSize = 'cover';
       sadMusic.play();
     }
   });
