@@ -10,6 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
   //we go crazy
   const submitButton = document.querySelector('.glow-on-hover');
   const homepage = document.querySelector('.homepage');
+  const body = document.querySelectorAll('body');
+  const partyBackground = document.querySelector('#partyBackground');
   submitButton.addEventListener('click', function () {
     //define selected mood to know the users input
     let selectedMood = document.getElementById('mood').value;
@@ -18,6 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
     //display selected theme
     if (selectedMood === 'party') {
       console.log('Party Time');
+      document.body.style.backgroundImage = "url('party-time.gif')";
+      document.body.style.backgroundSize = '1000px';
       const partyMusic = new Audio('partymusic.mp3');
       partyMusic.play();
     }
@@ -25,15 +29,16 @@ document.addEventListener('DOMContentLoaded', () => {
     //if the user selects relax
     if (selectedMood === 'relaxation') {
       console.log('Relaxxxxx');
-      const relaxMusic = new Audio('partymusic.mp3');
-      partyMusic.play();
+      document.body.style.backgroundImage = "url('peaceful.gif')";
+      const relaxMusic = new Audio('relax-music.mp3');
+      relaxMusic.play();
     }
 
     //if the user selects sad
     if (selectedMood === 'sad') {
       console.log('Sad time');
-      const sadMusic = new Audio('partymusic.mp3');
-      partyMusic.play();
+      const sadMusic = new Audio('sad-music.m4a');
+      sadMusic.play();
     }
   });
 });
