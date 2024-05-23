@@ -46,5 +46,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (selectedMood === 'broken') {
       console.log('broken time');
     }
+    //if the user selects sad
+    if (selectedMood === 'chaos') {
+      console.log('chaos');
+      document.body.style.backgroundImage = "url('chaos.gif')";
+      document.body.style.backgroundSize = 'cover';
+    }
   });
 });
