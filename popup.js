@@ -49,8 +49,10 @@ document.addEventListener('DOMContentLoaded', () => {
     //if the user selects sad
     if (selectedMood === 'chaos') {
       console.log('chaos');
+      const chaosMusic = new Audio('chaos-music.mp3');
       document.body.style.backgroundImage = "url('chaos.gif')";
       document.body.style.backgroundSize = 'cover';
+      chaosMusic.play();
     }
   });
 });
