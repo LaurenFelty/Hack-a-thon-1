@@ -69,6 +69,11 @@
 document.addEventListener('DOMContentLoaded', () => {
   console.log('This is a popup!');
 
+  //div container that hold options to select your mode
+  //options tag: party, relaxation, nostalgia
+
+  //event listener that when an option is selected it goes into that mode
+
   const submitButton = document.querySelector('.glow-on-hover');
   const homepage = document.querySelector('.homepage');
   let head = null; // Move head and apple references outside the function
@@ -87,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
     } else if (selectedMood === 'relaxation') {
       console.log('Relaxxxxx');
       document.body.style.backgroundImage = "url('peaceful.gif')";
-      document.body.style.backgroundSize = '600px';
+      document.body.style.backgroundSize = 'cover';
       const relaxMusic = new Audio('relax-music.mp3');
       relaxMusic.play();
     } else if (selectedMood === 'sad') {
@@ -110,6 +115,14 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!apple) {
         apple = new Apple(board); // Create the apple only if it doesn't exist
       }
+    }
+    //if the user selects sad
+    if (selectedMood === 'chaos') {
+      console.log('chaos');
+      const chaosMusic = new Audio('chaos-music.mp3');
+      document.body.style.backgroundImage = "url('chaos.gif')";
+      document.body.style.backgroundSize = 'cover';
+      chaosMusic.play();
     }
   });
 });
