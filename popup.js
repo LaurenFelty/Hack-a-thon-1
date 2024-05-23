@@ -6,8 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   //event listener that when an option is selected it goes into that mode
 
-  //div
-  //we go crazy
   const submitButton = document.querySelector('.glow-on-hover');
   const homepage = document.querySelector('.homepage');
   const body = document.querySelectorAll('body');
@@ -30,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (selectedMood === 'relaxation') {
       console.log('Relaxxxxx');
       document.body.style.backgroundImage = "url('peaceful.gif')";
-      document.body.style.backgroundSize = '600px';
+      document.body.style.backgroundSize = 'cover';
       const relaxMusic = new Audio('relax-music.mp3');
       relaxMusic.play();
     }
