@@ -43,5 +43,10 @@ document.addEventListener('DOMContentLoaded', () => {
       document.body.style.backgroundSize = 'cover';
       sadMusic.play();
     }
+
+    //if the user selects sad
+    if (selectedMood === 'broken') {
+      console.log('broken time');
+    }
   });
 });
